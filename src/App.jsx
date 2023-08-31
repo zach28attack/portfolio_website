@@ -1,9 +1,8 @@
-import {useState} from "react";
-
+import GreetingCard from "./components/GreetingCard";
 import "./App.css";
 
 function App() {
-  return <></>;
+  return <GreetingCard />;
 }
 
 export default App;
