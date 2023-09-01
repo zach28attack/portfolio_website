@@ -1,23 +1,23 @@
 .container {
   width: 100%;
   position: relative;
+  display: flex;
+  justify-content: center;
 }
 .nameGroup {
-  height: 20rem;
+  height: 35rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: absolute;
   flex-direction: column;
-  margin-left: 4rem;
-
   background-clip: text; /* This is the key property for applying gradient to text */
   color: transparent;
   background-image: linear-gradient(to left, #00b37d, #00a18c, #00ffe5d7);
 }
 .name h1 {
   font-weight: 700;
-  font-size: 4rem;
+  font-size: 5rem;
   margin: 2rem 0 0 0;
 }
 .name span {
@@ -28,30 +28,42 @@
   font-size: 2rem;
   display: flex;
   justify-content: space-around;
+  align-items: center;
   width: 100%;
   margin: 1rem;
+}
+.icon:hover {
+  color: #00ffe5d7;
 }
 .iconDesc {
   position: absolute;
   opacity: 0;
   transform: translateX(2rem) translateY(2rem);
-  transition: transform 0.6s ease-in, opacity 0.5s ease-in;
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
   font-size: 1rem;
   cursor: default;
   width: fit-content;
+
+  color: #00ffe5d7;
 }
 .activeIconDesc {
   opacity: 1;
   transform: translateX(-2rem) translateY(2rem);
 }
+
+.railsIcon {
+  font-size: 5rem;
+}
+.railsIconDesc {
+  position: absolute;
+  opacity: 0;
+  transform: translateX(2rem) translateY(3rem);
+  transition: transform 0.6s ease-in, opacity 0.5s ease-in;
+  font-size: 1rem;
+  cursor: default;
+  width: fit-content;
+}
 .activeRailsIconDesc {
   opacity: 1;
-  transform: translateX(-4rem) translateY(2rem);
-}
-.railsIcon {
-  transform: scale(2);
-  padding: 0 0.5rem;
-}
-.icon {
-  cursor: pointer;
+  transform: translateX(-4rem) translateY(3rem);
 }

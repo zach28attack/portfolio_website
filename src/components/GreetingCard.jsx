@@ -119,8 +119,8 @@ function GreetingCard() {
           </div>
 
           <div onMouseOver={iconHandler} id="rails">
-            <SiRubyonrails className={Class.railsIcon} />
-            <span id="span" className={`${Class.iconDesc} ${active8 ? Class.activeRailsIconDesc : ""}`}>
+            <SiRubyonrails className={`${Class.railsIcon} ${Class.icon}`} />
+            <span id="span" className={`${Class.railsIconDesc} ${active8 ? Class.activeRailsIconDesc : ""}`}>
               Ruby on Rails
             </span>
           </div>
