@@ -93,10 +93,12 @@ function GreetingCard() {
             <DiRuby className={Class.icon} />
             <span className={`${Class.iconDesc} ${active7 ? Class.activeIconDesc : ""}`}>Ruby</span>
           </div>
+
           <div onMouseEnter={iconHandler} id="rails">
             <SiRubyonrails className={Class.railsIcon} />
-            <span className={`${Class.iconDesc} ${active8 ? Class.activeIconDesc : ""}`}>Ruby on Rails</span>
+            <span className={`${Class.iconDesc} ${active8 ? Class.activeRailsIconDesc : ""}`}>Ruby on Rails</span>
           </div>
+
           <div onMouseEnter={iconHandler} id="mongodb">
             <SiMongodb className={Class.icon} />
             <span className={`${Class.iconDesc} ${active9 ? Class.activeIconDesc : ""}`}>MongoDB</span>
