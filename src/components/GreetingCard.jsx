@@ -53,6 +53,18 @@ function GreetingCard() {
       setActive((prev) => !prev);
     }
   };
+  const iconResetHandler = (e) => {
+    setIsActive1(false);
+    setIsActive2(false);
+    setIsActive3(false);
+    setIsActive4(false);
+    setIsActive5(false);
+    setIsActive6(false);
+    setIsActive7(false);
+    setIsActive8(false);
+    setIsActive9(false);
+    setIsActive10(false);
+  };
 
   return (
     <div className={Class.container}>
@@ -62,50 +74,68 @@ function GreetingCard() {
           <span>Full Stack Developer</span>
         </div>
 
-        <div className={Class.skillIcons}>
-          <div onMouseEnter={iconHandler} id="html">
+        <div className={Class.skillIcons} id="icon-container" onMouseLeave={iconResetHandler}>
+          <div onMouseOver={iconHandler} id="html">
             <AiFillHtml5 className={Class.icon} />
-            <span className={`${Class.iconDesc} ${active1 ? Class.activeIconDesc : ""}`} id="span">
+            <span id="span" className={`${Class.iconDesc} ${active1 ? Class.activeIconDesc : ""}`}>
               HTML5
             </span>
           </div>
-          <div onMouseEnter={iconHandler} id="css">
+          <div onMouseOver={iconHandler} id="css">
             <IoLogoCss3 className={Class.icon} />
-            <span className={`${Class.iconDesc} ${active2 ? Class.activeIconDesc : ""}`}>CSS3</span>
+            <span id="span" className={`${Class.iconDesc} ${active2 ? Class.activeIconDesc : ""}`}>
+              CSS3
+            </span>
           </div>
-          <div onMouseEnter={iconHandler} id="javascript">
+          <div onMouseOver={iconHandler} id="javascript">
             <BiLogoJavascript className={Class.icon} />
-            <span className={`${Class.iconDesc} ${active3 ? Class.activeIconDesc : ""}`}>Javascript</span>
+            <span id="span" className={`${Class.iconDesc} ${active3 ? Class.activeIconDesc : ""}`}>
+              Javascript
+            </span>
           </div>
-          <div onMouseEnter={iconHandler} id="node">
+          <div onMouseOver={iconHandler} id="node">
             <GrNode className={Class.icon} />
-            <span className={`${Class.iconDesc} ${active4 ? Class.activeIconDesc : ""}`}>Node</span>
+            <span id="span" className={`${Class.iconDesc} ${active4 ? Class.activeIconDesc : ""}`}>
+              Node
+            </span>
           </div>
-          <div onMouseEnter={iconHandler} id="express">
+          <div onMouseOver={iconHandler} id="express">
             <SiExpress className={Class.icon} />
-            <span className={`${Class.iconDesc} ${active5 ? Class.activeIconDesc : ""}`}>Express</span>
+            <span id="span" className={`${Class.iconDesc} ${active5 ? Class.activeIconDesc : ""}`}>
+              Express
+            </span>
           </div>
-          <div onMouseEnter={iconHandler} id="react">
+          <div onMouseOver={iconHandler} id="react">
             <BiLogoReact className={Class.icon} />
-            <span className={`${Class.iconDesc} ${active6 ? Class.activeIconDesc : ""}`}>React</span>
+            <span id="span" className={`${Class.iconDesc} ${active6 ? Class.activeIconDesc : ""}`}>
+              React
+            </span>
           </div>
-          <div onMouseEnter={iconHandler} id="ruby">
+          <div onMouseOver={iconHandler} id="ruby">
             <DiRuby className={Class.icon} />
-            <span className={`${Class.iconDesc} ${active7 ? Class.activeIconDesc : ""}`}>Ruby</span>
+            <span id="span" className={`${Class.iconDesc} ${active7 ? Class.activeIconDesc : ""}`}>
+              Ruby
+            </span>
           </div>
 
-          <div onMouseEnter={iconHandler} id="rails">
+          <div onMouseOver={iconHandler} id="rails">
             <SiRubyonrails className={Class.railsIcon} />
-            <span className={`${Class.iconDesc} ${active8 ? Class.activeRailsIconDesc : ""}`}>Ruby on Rails</span>
+            <span id="span" className={`${Class.iconDesc} ${active8 ? Class.activeRailsIconDesc : ""}`}>
+              Ruby on Rails
+            </span>
           </div>
 
-          <div onMouseEnter={iconHandler} id="mongodb">
+          <div onMouseOver={iconHandler} id="mongodb">
             <SiMongodb className={Class.icon} />
-            <span className={`${Class.iconDesc} ${active9 ? Class.activeIconDesc : ""}`}>MongoDB</span>
+            <span id="span" className={`${Class.iconDesc} ${active9 ? Class.activeIconDesc : ""}`}>
+              MongoDB
+            </span>
           </div>
-          <div onMouseEnter={iconHandler} id="github">
+          <div onMouseOver={iconHandler} id="github">
             <SiGithub className={Class.icon} />
-            <span className={`${Class.iconDesc} ${active10 ? Class.activeIconDesc : ""}`}>Github</span>
+            <span id="span" className={`${Class.iconDesc} ${active10 ? Class.activeIconDesc : ""}`}>
+              Github
+            </span>
           </div>
         </div>
       </section>
