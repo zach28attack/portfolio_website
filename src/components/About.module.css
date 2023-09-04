@@ -6,9 +6,10 @@
 .card {
   color: #00a18c;
   width: 70%;
-  border: 3px solid transparent;
-  border-image: linear-gradient(45deg, #00a18c, #228186, #00b37d);
+  border: 5px solid transparent;
+  border-image: linear-gradient(45deg, #00a18c, #2dabb1, #00b37d);
   border-image-slice: 1;
+
   background-clip: text; /* This is the key property for applying gradient to text */
   background-image: linear-gradient(to left, #00b37d, #00b37d, #00ffe5d7);
   transform: scale(0.9);
