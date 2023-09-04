@@ -1,14 +1,21 @@
 import Class from "./GreetingCard.module.css";
-
 import SkillIcons from "./SkillIcons";
 
-function GreetingCard() {
+function GreetingCard({sectionRef}) {
+  const scrollTo = () => {
+    if (sectionRef.current) {
+      sectionRef.current.scrollIntoView({
+        behavior: "smooth", // Add smooth scrolling animation
+      });
+    }
+  };
+
   return (
     <div className={Class.container}>
       <div className={Class.navbar}>
-        <span>About</span>
+        <span>Projects</span>
+        <span onClick={scrollTo}>About</span>
         <span>Contact</span>
-        <span>Resume</span>
       </div>
 
       <section className={Class.nameGroup}>
