@@ -1,20 +1,39 @@
 import Class from "./GreetingCard.module.css";
 import SkillIcons from "./SkillIcons";
 
-function GreetingCard({sectionRef}) {
-  const scrollTo = () => {
-    if (sectionRef.current) {
-      sectionRef.current.scrollIntoView({
-        behavior: "smooth", // Add smooth scrolling animation
+function GreetingCard({projectsRef, aboutRef}) {
+  const scrollToProjects = () => {
+    if (projectsRef.current) {
+      projectsRef.current.scrollIntoView({
+        behavior: "smooth",
       });
     }
+  };
+  const scrollToAbout = () => {
+    if (aboutRef.current) {
+      aboutRef.current.scrollIntoView({
+        behavior: "smooth",
+      });
+    }
+  };
+  const activeSkills = {
+    html: true,
+    css: true,
+    javascript: true,
+    node: true,
+    express: true,
+    react: true,
+    ruby: true,
+    rails: true,
+    mongodb: true,
+    github: true,
   };
 
   return (
     <div className={Class.container}>
       <div className={Class.navbar}>
-        <span>Projects</span>
-        <span onClick={scrollTo}>About</span>
+        <span onClick={scrollToProjects}>Projects</span>
+        <span onClick={scrollToAbout}>About</span>
         <span>Contact</span>
       </div>
 
@@ -23,7 +42,7 @@ function GreetingCard({sectionRef}) {
           <h1>Zachary Casares</h1>
           <span>Full Stack Developer</span>
         </div>
-        <SkillIcons />
+        <SkillIcons bigFont={true} activeSkills={activeSkills} />
       </section>
     </div>
   );

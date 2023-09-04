@@ -8,7 +8,7 @@ import {BiLogoJavascript, BiLogoReact} from "react-icons/bi";
 import {GrNode} from "react-icons/gr";
 import {DiRuby} from "react-icons/di";
 
-function SkillIcons() {
+function SkillIcons({bigFont, activeSkills}) {
   const [active1, setIsActive1] = useState(false);
   const [active2, setIsActive2] = useState(false);
   const [active3, setIsActive3] = useState(false);
@@ -67,70 +67,144 @@ function SkillIcons() {
     setIsActive10(false);
   };
   return (
-    <div className={Class.skillIcons} id="icon-container" onMouseLeave={iconResetHandler}>
-      <div onMouseOver={iconHandler} id="github">
-        <SiGithub className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active10 ? Class.activeIconDesc : ""}`}>
-          Github
-        </span>
-      </div>
-      <div onMouseOver={iconHandler} id="html">
-        <AiFillHtml5 className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active1 ? Class.activeIconDesc : ""}`}>
-          HTML5
-        </span>
-      </div>
-      <div onMouseOver={iconHandler} id="css">
-        <IoLogoCss3 className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active2 ? Class.activeIconDesc : ""}`}>
-          CSS3
-        </span>
-      </div>
+    <div
+      className={`${Class.skillIcons} ${bigFont ? Class.bigFont : Class.smallFont}`}
+      id="icon-container"
+      onMouseLeave={iconResetHandler}
+    >
+      {activeSkills["github"] && (
+        <div onMouseOver={iconHandler} id="github">
+          <SiGithub className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active10 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            Github
+          </span>
+        </div>
+      )}
+      {activeSkills["html"] && (
+        <div onMouseOver={iconHandler} id="html">
+          <AiFillHtml5 className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active1 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            HTML5
+          </span>
+        </div>
+      )}
+      {activeSkills["css"] && (
+        <div onMouseOver={iconHandler} id="css">
+          <IoLogoCss3 className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active2 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            CSS3
+          </span>
+        </div>
+      )}
 
-      <div onMouseOver={iconHandler} id="javascript">
-        <BiLogoJavascript className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active3 ? Class.activeIconDesc : ""}`}>
-          Javascript
-        </span>
-      </div>
-      <div onMouseOver={iconHandler} id="react">
-        <BiLogoReact className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active6 ? Class.activeIconDesc : ""}`}>
-          React
-        </span>
-      </div>
-      <div onMouseOver={iconHandler} id="node">
-        <GrNode className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active4 ? Class.activeIconDesc : ""}`}>
-          Node
-        </span>
-      </div>
-      <div onMouseOver={iconHandler} id="express">
-        <SiExpress className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active5 ? Class.activeIconDesc : ""}`}>
-          Express
-        </span>
-      </div>
+      {activeSkills["javascript"] && (
+        <div onMouseOver={iconHandler} id="javascript">
+          <BiLogoJavascript className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active3 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            Javascript
+          </span>
+        </div>
+      )}
+      {activeSkills["react"] && (
+        <div onMouseOver={iconHandler} id="react">
+          <BiLogoReact className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active6 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            React
+          </span>
+        </div>
+      )}
+      {activeSkills["node"] && (
+        <div onMouseOver={iconHandler} id="node">
+          <GrNode className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active4 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            Node
+          </span>
+        </div>
+      )}
+      {activeSkills["express"] && (
+        <div onMouseOver={iconHandler} id="express">
+          <SiExpress className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active5 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            Express
+          </span>
+        </div>
+      )}
 
-      <div onMouseOver={iconHandler} id="mongodb">
-        <SiMongodb className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active9 ? Class.activeIconDesc : ""}`}>
-          MongoDB
-        </span>
-      </div>
-      <div onMouseOver={iconHandler} id="ruby">
-        <DiRuby className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active7 ? Class.activeIconDesc : ""}`}>
-          Ruby
-        </span>
-      </div>
+      {activeSkills["mongodb"] && (
+        <div onMouseOver={iconHandler} id="mongodb">
+          <SiMongodb className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active9 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            MongoDB
+          </span>
+        </div>
+      )}
+      {activeSkills["ruby"] && (
+        <div onMouseOver={iconHandler} id="ruby">
+          <DiRuby className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active7 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            Ruby
+          </span>
+        </div>
+      )}
 
-      <div onMouseOver={iconHandler} id="rails">
-        <SiRubyonrails className={`${Class.railsIcon} ${Class.icon}`} />
-        <span id="span" className={`${Class.railsIconDesc} ${active8 ? Class.activeRailsIconDesc : ""}`}>
-          Ruby on Rails
-        </span>
-      </div>
+      {activeSkills["rails"] && (
+        <div onMouseOver={iconHandler} id="rails">
+          <SiRubyonrails className={`${Class.railsIcon} ${Class.icon}`} />
+          <span
+            id="span"
+            className={`${Class.railsIconDesc} ${active8 ? Class.activeRailsIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            Ruby on Rails
+          </span>
+        </div>
+      )}
     </div>
   );
 }
