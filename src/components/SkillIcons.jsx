@@ -68,6 +68,12 @@ function SkillIcons() {
   };
   return (
     <div className={Class.skillIcons} id="icon-container" onMouseLeave={iconResetHandler}>
+      <div onMouseOver={iconHandler} id="github">
+        <SiGithub className={Class.icon} />
+        <span id="span" className={`${Class.iconDesc} ${active10 ? Class.activeIconDesc : ""}`}>
+          Github
+        </span>
+      </div>
       <div onMouseOver={iconHandler} id="html">
         <AiFillHtml5 className={Class.icon} />
         <span id="span" className={`${Class.iconDesc} ${active1 ? Class.activeIconDesc : ""}`}>
@@ -80,10 +86,17 @@ function SkillIcons() {
           CSS3
         </span>
       </div>
+
       <div onMouseOver={iconHandler} id="javascript">
         <BiLogoJavascript className={Class.icon} />
         <span id="span" className={`${Class.iconDesc} ${active3 ? Class.activeIconDesc : ""}`}>
           Javascript
+        </span>
+      </div>
+      <div onMouseOver={iconHandler} id="react">
+        <BiLogoReact className={Class.icon} />
+        <span id="span" className={`${Class.iconDesc} ${active6 ? Class.activeIconDesc : ""}`}>
+          React
         </span>
       </div>
       <div onMouseOver={iconHandler} id="node">
@@ -98,10 +111,11 @@ function SkillIcons() {
           Express
         </span>
       </div>
-      <div onMouseOver={iconHandler} id="react">
-        <BiLogoReact className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active6 ? Class.activeIconDesc : ""}`}>
-          React
+
+      <div onMouseOver={iconHandler} id="mongodb">
+        <SiMongodb className={Class.icon} />
+        <span id="span" className={`${Class.iconDesc} ${active9 ? Class.activeIconDesc : ""}`}>
+          MongoDB
         </span>
       </div>
       <div onMouseOver={iconHandler} id="ruby">
@@ -115,19 +129,6 @@ function SkillIcons() {
         <SiRubyonrails className={`${Class.railsIcon} ${Class.icon}`} />
         <span id="span" className={`${Class.railsIconDesc} ${active8 ? Class.activeRailsIconDesc : ""}`}>
           Ruby on Rails
-        </span>
-      </div>
-
-      <div onMouseOver={iconHandler} id="mongodb">
-        <SiMongodb className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active9 ? Class.activeIconDesc : ""}`}>
-          MongoDB
-        </span>
-      </div>
-      <div onMouseOver={iconHandler} id="github">
-        <SiGithub className={Class.icon} />
-        <span id="span" className={`${Class.iconDesc} ${active10 ? Class.activeIconDesc : ""}`}>
-          Github
         </span>
       </div>
     </div>
