@@ -23,3 +23,21 @@
 .name span {
   font-size: 1.5rem;
 }
+.navbar {
+  position: absolute;
+  right: 0;
+  display: flex;
+  gap: 4rem;
+  font-size: 1rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+.navbar span {
+  color: #00a18c;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.navbar span:hover {
+  color: #00ffe5d7;
+}
