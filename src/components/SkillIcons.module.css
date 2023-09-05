@@ -4,8 +4,6 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin-bottom: 2rem;
-  /* margin-left: 1rem; */
 }
 .bigFont {
   font-size: 2.2rem !important;
@@ -34,25 +32,8 @@
 .descSmallFont {
   font-size: 0.6rem;
   margin-left: 0.5rem;
-  transform: translateX(-2rem) translateY(1.5rem);
+  transform: translateX(-4rem) translateY(1.5rem);
 }
 .activeIconDesc {
-  opacity: 1;
-}
-
-.railsIcon {
-  font-size: 5rem;
-}
-.railsIconDesc {
-  position: absolute;
-  opacity: 0;
-  transform: translateX(-4rem) translateY(3rem);
-  transition: opacity 0.3s ease-in;
-
-  cursor: default;
-  width: fit-content;
-  color: #00ffe5d7;
-}
-.activeRailsIconDesc {
   opacity: 1;
 }

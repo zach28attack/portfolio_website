@@ -3,10 +3,10 @@ import {useState} from "react";
 
 import {AiFillHtml5} from "react-icons/ai";
 import {IoLogoCss3} from "react-icons/io";
-import {SiRubyonrails, SiExpress, SiMongodb, SiGithub} from "react-icons/si";
+import {SiExpress, SiMongodb, SiGithub} from "react-icons/si";
 import {BiLogoJavascript, BiLogoReact} from "react-icons/bi";
 import {GrNode} from "react-icons/gr";
-import {DiRuby} from "react-icons/di";
+import {DiRuby, DiRor} from "react-icons/di";
 
 function SkillIcons({bigFont, activeSkills}) {
   const [active1, setIsActive1] = useState(false);
@@ -194,10 +194,10 @@ function SkillIcons({bigFont, activeSkills}) {
 
       {activeSkills["rails"] && (
         <div onMouseOver={iconHandler} id="rails">
-          <SiRubyonrails className={`${Class.railsIcon} ${Class.icon}`} />
+          <DiRor className={Class.icon} />
           <span
             id="span"
-            className={`${Class.railsIconDesc} ${active8 ? Class.activeRailsIconDesc : ""} ${
+            className={`${Class.iconDesc} ${active8 ? Class.activeIconDesc : ""} ${
               bigFont ? Class.descBigFont : Class.descSmallFont
             }`}
           >
