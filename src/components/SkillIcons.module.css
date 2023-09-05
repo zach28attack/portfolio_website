@@ -48,7 +48,7 @@
   opacity: 0;
   transform: translateX(-4rem) translateY(3rem);
   transition: opacity 0.3s ease-in;
-  font-size: 1rem;
+
   cursor: default;
   width: fit-content;
   color: #00ffe5d7;
