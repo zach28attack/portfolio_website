@@ -12,6 +12,7 @@
 }
 .smallFont {
   font-size: 1.5rem !important;
+
   width: 70%;
 }
 .icon:hover {
@@ -28,10 +29,12 @@
 }
 .descBigFont {
   font-size: 1rem;
+  transform: translateX(-2rem) translateY(2.2rem);
 }
 .descSmallFont {
   font-size: 0.6rem;
   margin-left: 0.5rem;
+  transform: translateX(-2rem) translateY(1.5rem);
 }
 .activeIconDesc {
   opacity: 1;

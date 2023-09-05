@@ -32,7 +32,7 @@ function Project() {
         ></iframe>
       </div>
       <section className={Class.description}>
-        <h1>NutriTone</h1>
+        <div className={Class.projectTitle}>NutriTone</div>
         <sub>
           <SkillIcons bigFont={false} activeSkills={activeSkills} />
         </sub>
