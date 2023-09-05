@@ -10,16 +10,25 @@ import SkillIcons from "./SkillIcons";
 function Project({project}) {
   return (
     <div className={Class.container}>
-      <div className={Class.videoContainer}>
-        <iframe width="500" height="300" src={project.videoLink} title="YouTube video player" allowFullScreen></iframe>
+      <div className={Class.header}>
+        <div className={Class.videoContainer}>
+          <iframe
+            width="500"
+            height="300"
+            src={project.videoLink}
+            title="YouTube video player"
+            allowFullScreen
+          ></iframe>
+        </div>
+        <section className={Class.description}>
+          <div className={Class.projectTitle}>{project.name}</div>
+          <sub>
+            <SkillIcons bigFont={false} activeSkills={project.activeSkills} />
+          </sub>
+          <p>{project.body}</p>
+        </section>
       </div>
-      <section className={Class.description}>
-        <div className={Class.projectTitle}>{project.name}</div>
-        <sub>
-          <SkillIcons bigFont={false} activeSkills={project.activeSkills} />
-        </sub>
-        <p>{project.body}</p>
-      </section>
+      <p className={Class.secondaryBody}>{project.body2}</p>
     </div>
   );
 }
