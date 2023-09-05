@@ -2,8 +2,6 @@
   width: 80%;
   display: flex;
   justify-content: space-around;
-  background-clip: text; /* This is the key property for applying gradient to text */
-  background-image: linear-gradient(to left, #00b37d, #00e8a3, #00ffe5d7, white, white);
 }
 .videoContainer {
   margin: 1rem;
@@ -12,10 +10,10 @@
   max-width: 24rem;
   border-radius: 10px;
   color: #00a18c;
-  text-align: center;
 }
 .description h1 {
-  color: transparent;
+  color: #00ffe5d7;
+  font-size: 2rem;
 }
 .description sub {
   font-size: 1.5rem;
