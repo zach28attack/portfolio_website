@@ -1,15 +1,22 @@
 .container {
   width: 80%;
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(172, 100%, 40%);
 }
 .videoContainer {
-  margin: 1rem;
+  margin: 0 2rem;
 }
-.description {
-  max-width: 24rem;
+.description p {
+  min-width: 24rem;
+  max-width: 35rem;
   border-radius: 10px;
-  color: #00a18c;
+  text-indent: 2em;
+}
+.description sub {
+  font-size: 1.5rem;
+  width: min-content;
 }
 .projectTitle {
   color: #00ffe5d7;
@@ -17,10 +24,18 @@
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
 }
-.description sub {
-  font-size: 1.5rem;
-  width: min-content;
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
+.secondaryBody {
+  width: 100%;
+  padding: 1rem;
+  text-indent: 2em;
+}
+
 /* 
 #13484b blue
 #00a18c lighter blue
