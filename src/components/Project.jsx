@@ -7,41 +7,18 @@ import Class from "./Project.module.css";
 // import {DiRuby} from "react-icons/di";
 import SkillIcons from "./SkillIcons";
 
-function Project() {
-  const activeSkills = {
-    html: true,
-    css: true,
-    javascript: true,
-    node: true,
-    express: true,
-    react: true,
-    ruby: false,
-    rails: false,
-    mongodb: true,
-    github: false,
-  };
+function Project({project}) {
   return (
     <div className={Class.container}>
       <div className={Class.videoContainer}>
-        <iframe
-          width="500"
-          height="300"
-          src="https://www.youtube.com/embed/-U48AAZo_Cw?si=ocVJLtdPAAhccc14"
-          title="YouTube video player"
-          allowFullScreen
-        ></iframe>
+        <iframe width="500" height="300" src={project.videoLink} title="YouTube video player" allowFullScreen></iframe>
       </div>
       <section className={Class.description}>
-        <div className={Class.projectTitle}>NutriTone</div>
+        <div className={Class.projectTitle}>{project.name}</div>
         <sub>
-          <SkillIcons bigFont={false} activeSkills={activeSkills} />
+          <SkillIcons bigFont={false} activeSkills={project.activeSkills} />
         </sub>
-        <p>
-          A diet tracker application that helps users along their fitness/weight loss journey. Users can track their
-          calorie intake by logging meals they eat manually or by searching the USDA database. Users can also calculate
-          their daily calorie budgets using the Coach feature & track their weight loss. NutriTone also boasts a social
-          feature. Allowing users to join communities to find support and interact with others in the community.
-        </p>
+        <p>{project.body}</p>
       </section>
     </div>
   );
