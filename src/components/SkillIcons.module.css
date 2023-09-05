@@ -1,16 +1,18 @@
 .skillIcons {
   color: #00a18c;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   width: 100%;
-  margin: 1rem;
+  margin-bottom: 2rem;
+  /* margin-left: 1rem; */
 }
 .bigFont {
   font-size: 2.2rem !important;
 }
 .smallFont {
-  font-size: 1.8rem !important;
+  font-size: 1.5rem !important;
+  width: 70%;
 }
 .icon:hover {
   color: #00ffe5d7;
@@ -28,7 +30,8 @@
   font-size: 1rem;
 }
 .descSmallFont {
-  font-size: 0.8rem;
+  font-size: 0.6rem;
+  margin-left: 0.5rem;
 }
 .activeIconDesc {
   opacity: 1;
