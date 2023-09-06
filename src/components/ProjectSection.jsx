@@ -40,7 +40,10 @@ function Projects() {
   };
   return (
     <div className={Class.container}>
-      <div className={Class.sectionTitle}>My Projects</div>
+      <div className={Class.sectionTitle}>
+        <span>My Projects</span>
+        <div className={Class.bar}></div>
+      </div>
       <Project project={NutriTone} />
       <Project project={GrapeVine} />
     </div>
