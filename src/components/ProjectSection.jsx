@@ -24,7 +24,7 @@ function Projects() {
   const GrapeVine = {
     videoLink: "https://www.youtube.com/embed/-U48AAZo_Cw?si=ocVJLtdPAAhccc14",
     name: "GrapeVine",
-    body: "GrapeVine is the initial version of NutriTone, offering a comprehensive suite of features, including calorie tracking, weight loss monitoring, and macro tracking. This vibrant diet tracker is meticulously crafted using Ruby, Ruby on Rails, and Vanilla JavaScript. JavaScript plays a pivotal role in seamlessly integrating APIs and ensuring smooth modal transitions within the application.",
+    body: "GrapeVine is the initial version of NutriTone, offering a suite of features, including calorie tracking, weight loss monitoring, and macro tracking. This vibrant diet tracker is meticulously crafted using Ruby, Ruby on Rails, and Vanilla JavaScript. JavaScript plays a pivotal role in seamlessly integrating APIs and ensuring smooth modal transitions within the application.",
     activeSkills: {
       html: true,
       css: true,
