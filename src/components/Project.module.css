@@ -13,6 +13,7 @@
   max-width: 35rem;
   border-radius: 10px;
   text-indent: 1em;
+  line-height: 1.3rem;
 }
 .description sub {
   font-size: 1.5rem;
@@ -31,6 +32,7 @@
   justify-content: center;
 }
 .secondaryBody {
+  line-height: 1.3rem;
   width: 100%;
   padding: 1rem;
   text-indent: 2em;
