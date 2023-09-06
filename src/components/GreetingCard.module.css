@@ -15,6 +15,9 @@
   color: transparent;
   background-image: linear-gradient(to left, #00b37d, #00b395, #00a18c, #00ffe5d7);
 }
+.name {
+  margin-bottom: 1rem;
+}
 .name h1 {
   font-weight: 700;
   font-size: 5rem;
