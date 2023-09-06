@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: hsl(172, 100%, 40%);
+  color: #00ccb1;
 }
 .videoContainer {
   margin: 0 2rem;
@@ -24,6 +24,31 @@
   font-size: 2rem;
   margin-top: 1.5rem;
   margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+}
+.projectTitle a:link {
+  background-color: transparent;
+  border: #00ffe5d7 solid 1px;
+  cursor: pointer;
+  color: #00ffe5d7;
+  border-radius: 10px;
+  text-decoration: none;
+  font-size: 0.8rem;
+  padding: 0.2rem 0.6rem;
+  margin-left: 2rem;
+}
+.projectTitle a:visited {
+  color: #00ffe597;
+  border: #00ffe597 solid 1px;
+}
+.projectTitle a:hover {
+  color: #00ccb1;
+  border: #00ccb1 solid 1px;
+}
+.projectTitle a:active {
+  color: #00ffe597;
+  border: #00ffe597 solid 1px;
 }
 
 .header {

@@ -21,7 +21,9 @@ function Project({project}) {
           ></iframe>
         </div>
         <section className={Class.description}>
-          <div className={Class.projectTitle}>{project.name}</div>
+          <div className={Class.projectTitle}>
+            {project.name} <a href={`https://github.com/zach28attack/${project.name}`}>{"Source</>"}</a>
+          </div>
           <sub>
             <SkillIcons bigFont={false} activeSkills={project.activeSkills} />
           </sub>
