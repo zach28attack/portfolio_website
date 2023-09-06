@@ -4,7 +4,7 @@ function About() {
   return (
     <div className={Class.container}>
       <section className={Class.card}>
-        <h1>About Me</h1>
+        <div className={Class.aboutTitle}>About Me</div>
         <article className={Class.article}>
           Hello, my name is Zachary Casares, i'm a self-taught full-stack web developer on an exciting journey in the
           world of technology. My passion for web development and my dedication to learning have been the driving forces
