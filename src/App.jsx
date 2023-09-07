@@ -5,8 +5,9 @@ import {useRef} from "react";
 import ProjectSection from "./components/ProjectSection";
 
 function App() {
-  const projectsRef = useRef(null);
-  const aboutRef = useRef(null);
+  const projectsRef = useRef();
+  const aboutRef = useRef();
+
   return (
     <>
       <GreetingCard projectsRef={projectsRef} aboutRef={aboutRef} />
