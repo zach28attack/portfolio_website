@@ -31,9 +31,10 @@
   right: 0;
   display: flex;
   gap: 4rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 400;
   padding: 1rem;
+  margin-right: 2rem;
 }
 .navbar span {
   color: #00a18c;
@@ -42,5 +43,21 @@
 }
 
 .navbar span:hover {
+  color: #00ffe5d7;
+}
+.navbar a:link {
+  color: #00a18c;
+  z-index: 1;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navbar a:visited {
+  color: #00ffe5d7;
+}
+.navbar a:active {
+  color: #00ffe5d7;
+}
+.navbar a:hover {
   color: #00ffe5d7;
 }
