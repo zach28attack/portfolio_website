@@ -34,3 +34,15 @@
   padding: 1rem;
   color: transparent;
 }
+a:link {
+  color: #00ccb1;
+}
+a:visited {
+  color: #00ccb1;
+}
+a:active {
+  color: #00ccb1;
+}
+a:hover {
+  color: #00ccb1;
+}

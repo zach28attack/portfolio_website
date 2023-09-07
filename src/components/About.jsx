@@ -28,7 +28,8 @@ function About() {
           staying at the forefront of the rapidly evolving tech landscape. <h3>Get in Touch</h3> I'm always eager to
           take on new challenges and collaborate on exciting projects. If you're looking for a full-stack web developer
           who is passionate, adaptable, and ready to make a mark in the tech industry, please don't hesitate to get in
-          touch. You can reach me via email at [Email] or connect with me on [LinkedIn/GitHub].
+          touch. You can reach me via email at rrumble250@gmail.com or connect with me on{" "}
+          <a href="https://www.linkedin.com/in/zachary-casares-95b0b4215/">LinkedIn</a>.
         </article>
       </section>
     </div>
