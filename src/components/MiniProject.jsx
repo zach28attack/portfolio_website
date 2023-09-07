@@ -13,7 +13,7 @@ function MiniProject({project}) {
         </sub>
       </header>
       <div className={Class.videoContainer}>
-        <iframe width="350" height="200" src={project.videoLink} title="YouTube video player" allowFullScreen></iframe>
+        <iframe width="320" height="200" src={project.videoLink} title="YouTube video player" allowFullScreen></iframe>
       </div>
       <section className={Class.description}>
         <p>{project.desc}</p>

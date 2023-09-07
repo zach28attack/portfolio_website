@@ -7,7 +7,7 @@ function Project({project}) {
       <div className={Class.header}>
         <div className={Class.videoContainer}>
           <iframe
-            width="500"
+            width="470"
             height="300"
             src={project.videoLink}
             title="YouTube video player"
