@@ -6,6 +6,7 @@
   min-height: 40rem;
   background-image: linear-gradient(to left, #00b37d, #00e1cbd7, #00ffe5d7);
   background-clip: text;
+  -webkit-background-clip: text; /* For Chrome */
 }
 .sectionTitle {
   font-size: 3.5rem;

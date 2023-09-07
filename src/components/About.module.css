@@ -11,6 +11,7 @@
   border-image-slice: 1;
 
   background-clip: text; /* This is the key property for applying gradient to text */
+  -webkit-background-clip: text; /* For Chrome */
   background-image: linear-gradient(to right, #00ffe5d7, #2dabb1, #00b37d);
   transform: scale(0.9);
   padding: 2rem;
