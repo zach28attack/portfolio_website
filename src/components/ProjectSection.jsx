@@ -4,7 +4,7 @@ import Class from "./ProjectSection.module.css";
 
 function Projects() {
   const NutriTone = {
-    videoLink: "https://www.youtube.com/embed/-U48AAZo_Cw?si=ocVJLtdPAAhccc14",
+    videoLink: "https://www.youtube.com/embed/UtvKs4uj_tY?si=X5vl4pvAvpz0rM6S",
     name: "NutriTone",
     body: "NutriTone is a comprehensive diet tracking application designed to support users on their fitness and weight loss journey. With NutriTone, you can effortlessly monitor your calorie intake by either manually logging your meals or easily searching the USDA database. Additionally, the Coach feature empowers you to calculate your daily calorie budget, helping you to find a diet that meets your needs.",
     body2:
@@ -23,7 +23,7 @@ function Projects() {
     },
   };
   const GrapeVine = {
-    videoLink: "https://www.youtube.com/embed/-U48AAZo_Cw?si=ocVJLtdPAAhccc14",
+    videoLink: "https://www.youtube.com/embed/PGd8JEE6nR4?si=aL2omd8zNRAscEdr",
     name: "GrapeVine",
     body: "GrapeVine is the initial version of NutriTone, offering a suite of features, including calorie tracking, weight loss monitoring, and macro tracking. To ensure its robustness and reliability, i've implemented a comprehensive suite of end-to-end tests using Rspec and FactoryBot. JavaScript plays a pivotal role in seamlessly integrating APIs and ensuring smooth modal transitions.",
     body2: false,
@@ -41,7 +41,7 @@ function Projects() {
     },
   };
   const TwitterClone = {
-    videoLink: "https://www.youtube.com/embed/-U48AAZo_Cw?si=ocVJLtdPAAhccc14",
+    videoLink: "https://www.youtube.com/embed/7wdcw0KwBlc?si=y8QgFES70Sszqebh",
     name: "TwitterClone",
     desc: "A clone of the formerly named Twitter website.",
     activeSkills: {
@@ -58,7 +58,7 @@ function Projects() {
     },
   };
   const TodoList = {
-    videoLink: "https://www.youtube.com/embed/-U48AAZo_Cw?si=ocVJLtdPAAhccc14",
+    videoLink: "https://www.youtube.com/embed/CsZmFjFJti8?si=U467_Px2Comg-Nps",
     name: "TodoList",
     desc: "A to-do list to help users organize their dialy tasks.",
     activeSkills: {
@@ -75,7 +75,7 @@ function Projects() {
     },
   };
   const AlphaBlog = {
-    videoLink: "https://www.youtube.com/embed/-U48AAZo_Cw?si=ocVJLtdPAAhccc14",
+    videoLink: "https://www.youtube.com/embed/E1-NgkwpM6E?si=3dftfhsIrG2rMU3C",
     name: "AlphaBlog",
     desc: "A Blog website for users to create blog posts.",
     activeSkills: {
@@ -92,7 +92,7 @@ function Projects() {
     },
   };
   const FriendsBook = {
-    videoLink: "https://www.youtube.com/embed/-U48AAZo_Cw?si=ocVJLtdPAAhccc14",
+    videoLink: "https://www.youtube.com/embed/BvIDZZmnjas?si=JHscMWPkVNcLlfDv",
     name: "FriendsBook",
     desc: "A contacts book web application for users to easily keep track of important contact information.",
     activeSkills: {
