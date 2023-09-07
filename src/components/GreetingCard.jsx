@@ -16,6 +16,7 @@ function GreetingCard({projectsRef, aboutRef}) {
       });
     }
   };
+
   const activeSkills = {
     html: true,
     css: true,
@@ -34,7 +35,7 @@ function GreetingCard({projectsRef, aboutRef}) {
       <div className={Class.navbar}>
         <span onClick={scrollToProjects}>Projects</span>
         <span onClick={scrollToAbout}>About</span>
-        <span>Contact</span>
+        <a href="mailto:rrumble250@gmail.com?subject=Web%20Development%20Oppertunity&body=">Contact Me</a>
       </div>
 
       <section className={Class.nameGroup}>
