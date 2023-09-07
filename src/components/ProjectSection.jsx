@@ -118,10 +118,10 @@ function Projects() {
       <Project project={NutriTone} />
       <Project project={GrapeVine} />
       <div className={Class.miniProjectSection}>
-        <MiniProject project={TwitterClone} />
         <MiniProject project={TodoList} />
-        <MiniProject project={AlphaBlog} />
+        <MiniProject project={TwitterClone} />
         <MiniProject project={FriendsBook} />
+        <MiniProject project={AlphaBlog} />
       </div>
     </div>
   );
