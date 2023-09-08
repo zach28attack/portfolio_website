@@ -11,7 +11,7 @@ function BGVideo() {
         loop
         autoPlay
         controlsList="nodownload"
-        preload="false"
+        preload="auto"
         muted="muted"
         poster="/Untitled.mp4"
       >
