@@ -1,8 +1,11 @@
 import Class from "./BGVideo.module.css";
-
+import {IoIosArrowDown} from "react-icons/io";
 function BGVideo() {
   return (
     <div className={Class.videoContainer}>
+      <div className={Class.arrow}>
+        <IoIosArrowDown />
+      </div>
       <video
         className={Class.video}
         loop
