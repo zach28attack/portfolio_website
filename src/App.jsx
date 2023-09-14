@@ -10,11 +10,12 @@ function App() {
 
   return (
     <>
-      <GreetingCard projectsRef={projectsRef} aboutRef={aboutRef} />
       <BGVideo />
+      <GreetingCard projectsRef={projectsRef} aboutRef={aboutRef} />
       <div ref={projectsRef}>
         <ProjectSection />
       </div>
+
       <div ref={aboutRef}>
         <About />
       </div>

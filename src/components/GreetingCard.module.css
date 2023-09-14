@@ -1,15 +1,16 @@
 .container {
   width: 100%;
-  position: relative;
   display: flex;
   justify-content: center;
+  height: 100vh;
 }
 .nameGroup {
   height: 35rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  /* position: absolute; */
+  z-index: 1;
   flex-direction: column;
   background-clip: text; /* This is the key property for applying gradient to text */
   color: transparent;
@@ -36,18 +37,20 @@
   font-weight: 400;
   padding: 1rem;
   margin-right: 2rem;
+  z-index: 2;
 }
 .navbar span {
-  color: #00a18c;
+  color: #00ffe5d7;
   z-index: 1;
   cursor: pointer;
 }
 
 .navbar span:hover {
   color: #00ffe5d7;
+  text-decoration: underline;
 }
 .navbar a:link {
-  color: #00a18c;
+  color: #00ffe5d7;
   z-index: 1;
   cursor: pointer;
   text-decoration: none;
@@ -61,4 +64,5 @@
 }
 .navbar a:hover {
   color: #00ffe5d7;
+  text-decoration: underline;
 }
