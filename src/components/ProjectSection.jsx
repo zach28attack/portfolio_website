@@ -108,6 +108,23 @@ function Projects() {
       github: false,
     },
   };
+  const SekaiNoKo = {
+    videoLink: "https://www.youtube.com/embed/KVAqxF16j9c?si=h7KWsyKe7Km-XXkz",
+    name: "SekaiNoKo",
+    body: "A Japanese study app to help users practice their reading skills. The app displays popular articles written in Japananese and helps users by translating vocab like names, verbs, adjectives, and places then breaks them down into their single-kanji constituents with each of their meanings.",
+    activeSkills: {
+      html: true,
+      css: true,
+      javascript: true,
+      node: true,
+      express: true,
+      react: true,
+      ruby: false,
+      rails: false,
+      mongodb: false,
+      github: false,
+    },
+  };
 
   return (
     <div className={Class.container}>
@@ -116,6 +133,7 @@ function Projects() {
         <div className={Class.bar}></div>
       </div>
       <Project project={NutriTone} />
+      <Project project={SekaiNoKo} />
       <Project project={GrapeVine} />
       <div className={Class.miniProjectSection}>
         <MiniProject project={TodoList} />
