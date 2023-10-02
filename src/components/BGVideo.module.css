@@ -8,13 +8,7 @@
   z-index: -1;
 }
 
-/* .arrow {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  padding-bottom: 1rem;
-  font-size: 2rem;
-  color: #00ffe5d7;
-} */
+.video::-webkit-media-controls-start-playback-button {
+  display: none !important;
+  -webkit-appearance: none;
+}

@@ -1,5 +1,5 @@
 import Class from "./BGVideo.module.css";
-import {IoIosArrowDown} from "react-icons/io";
+
 function BGVideo() {
   return (
     <video
