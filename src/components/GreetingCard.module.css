@@ -5,11 +5,10 @@
   height: 100vh;
 }
 .nameGroup {
-  height: 35rem;
+  height: 30rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* position: absolute; */
   z-index: 1;
   flex-direction: column;
   background-clip: text; /* This is the key property for applying gradient to text */
@@ -22,7 +21,6 @@
 }
 .name h1 {
   font-weight: 700;
-  font-size: 5rem;
   margin: 2rem 0 0 0;
 }
 .name span {
@@ -32,12 +30,43 @@
   position: absolute;
   right: 0;
   display: flex;
-  gap: 4rem;
-  font-size: 1.2rem;
   font-weight: 400;
   padding: 1rem;
   margin-right: 2rem;
   z-index: 2;
+  white-space: nowrap;
+  gap: 4em;
+}
+
+/* Mobile screens */
+@media screen and (min-width: 300px) {
+  .navbar {
+    gap: 1.5em;
+    font-size: 1em;
+  }
+  .name h1 {
+    font-size: 2em;
+  }
+}
+/* HD PC screens */
+@media screen and (min-width: 1080px) {
+  .navbar {
+    gap: 5em; /* Adjust the value for larger screens */
+    font-size: 1.2em;
+  }
+  .name h1 {
+    font-size: 4em;
+  }
+}
+/* Larger screens (e.g., Full HD) */
+@media screen and (min-width: 2000px) {
+  .navbar {
+    gap: 5em; /* Adjust the value for larger screens */
+    font-size: 1.5em;
+  }
+  .name h1 {
+    font-size: 6em;
+  }
 }
 .navbar span {
   color: #00ffe5d7;

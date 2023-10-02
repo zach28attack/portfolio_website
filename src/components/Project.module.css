@@ -7,12 +7,8 @@
   margin-top: 4rem;
   z-index: 1;
 }
-.videoContainer {
-  margin: 0 2rem;
-}
+
 .description p {
-  min-width: 24rem;
-  max-width: 35rem;
   border-radius: 10px;
   text-indent: 1em;
   line-height: 1.3rem;
@@ -28,6 +24,8 @@
   margin-bottom: 0.5rem;
   display: flex;
   align-items: center;
+  white-space: nowrap;
+  justify-content: space-around;
 }
 .projectTitle a:link {
   background-color: transparent;
@@ -38,7 +36,6 @@
   text-decoration: none;
   font-size: 0.8rem;
   padding: 0.2rem 0.6rem;
-  margin-left: 2rem;
 }
 .projectTitle a:visited {
   color: #00ffe597;
@@ -52,21 +49,76 @@
   color: #00ffe597;
   border: #00ffe597 solid 1px;
 }
-
 .header {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 .secondaryBody {
-  line-height: 1.3rem;
-  width: 100%;
   padding: 1rem;
   text-indent: 2em;
 }
 
-/* 
-#13484b blue
-#00a18c lighter blue // lighter blue #00ccb1
-#00b37d neon green
-*/
+/* Mobile screens */
+@media screen and (min-width: 300px) {
+  .projectTitle a {
+    margin-left: 1em;
+  }
+  .videoContainer iframe {
+    width: 100%;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .description p {
+    width: 30em;
+    line-height: 1.5em;
+    font-size: 0.6em;
+  }
+  .secondaryBody {
+    line-height: 1.5em;
+    width: 100%;
+    font-size: 0.6em;
+  }
+}
+/* HD PC screens */
+@media screen and (min-width: 700px) {
+  .videoContainer {
+    margin: 0 2rem;
+  }
+  .videoContainer iframe {
+    width: 470px;
+    height: 300px;
+  }
+  .header {
+    flex-direction: row;
+  }
+  .description p {
+    width: 30em;
+    line-height: 1.5em;
+    font-size: 0.6em;
+  }
+  .secondaryBody {
+    line-height: 1.5em;
+    width: 100%;
+    font-size: 0.6em;
+  }
+}
+/* Larger screens (e.g., Full HD) */
+@media screen and (min-width: 2000px) {
+  .videoContainer iframe {
+    width: 470px;
+    height: 300px;
+  }
+  .header {
+    flex-direction: row;
+  }
+  .description p {
+    width: 30em;
+    line-height: 1.5em;
+  }
+  .secondaryBody {
+    line-height: 1.5em;
+    width: 70%;
+  }
+}

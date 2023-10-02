@@ -178,6 +178,19 @@ function SkillIcons({bigFont, activeSkills}) {
           </span>
         </div>
       )}
+      {activeSkills["rails"] && (
+        <div onMouseOver={iconHandler} id="rails">
+          <DiRor className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active8 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            Rails
+          </span>
+        </div>
+      )}
       {activeSkills["ruby"] && (
         <div onMouseOver={iconHandler} id="ruby">
           <DiRuby className={Class.icon} />
@@ -188,20 +201,6 @@ function SkillIcons({bigFont, activeSkills}) {
             }`}
           >
             Ruby
-          </span>
-        </div>
-      )}
-
-      {activeSkills["rails"] && (
-        <div onMouseOver={iconHandler} id="rails">
-          <DiRor className={Class.icon} />
-          <span
-            id="span"
-            className={`${Class.iconDesc} ${active8 ? Class.activeIconDesc : ""} ${
-              bigFont ? Class.descBigFont : Class.descSmallFont
-            }`}
-          >
-            Ruby on Rails
           </span>
         </div>
       )}

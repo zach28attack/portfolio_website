@@ -8,19 +8,15 @@
   z-index: 2;
   background-color: rgb(19, 72, 75, 0.95);
   color: #00a18c;
-  width: 70%;
   border: 5px solid transparent;
   border-image: linear-gradient(45deg, #00a18c, #2dabb1, #00b37d);
   border-image-slice: 1;
-
   transform: scale(0.9);
-  padding: 2rem;
   box-shadow: 0px 0px 30px 15px rgba(0, 255, 229, 0.3);
 }
 .article {
   padding: 0 1rem;
   padding-bottom: 1rem;
-  font-size: 0.8rem;
   color: #00ccb1;
   line-height: 1.2rem;
 }
@@ -45,4 +41,35 @@ a:active {
 }
 a:hover {
   color: #00ffe5d7;
+}
+
+/* Mobile screens */
+@media screen and (min-width: 300px) {
+  .card {
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .article {
+    font-size: 0.7em;
+  }
+  .article h3 {
+    font-size: 1em;
+  }
+}
+/* HD PC screens */
+@media screen and (min-width: 1080px) {
+  .card {
+    width: 70%;
+    padding: 2rem;
+  }
+  .article {
+    font-size: 0.8rem;
+  }
+}
+
+/* Larger screens (e.g., Full HD) */
+@media screen and (min-width: 2000px) {
+  .article {
+    font-size: 1rem;
+  }
 }

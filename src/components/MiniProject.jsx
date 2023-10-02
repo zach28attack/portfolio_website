@@ -4,7 +4,7 @@ import SkillIcons from "./SkillIcons";
 function MiniProject({project}) {
   return (
     <div className={Class.container}>
-      <header>
+      <header className={Class.header}>
         <div className={Class.projectTitle}>
           {project.name} <a href={`https://github.com/zach28attack/${project.name}`}>{"Source </>"}</a>
         </div>
@@ -13,7 +13,7 @@ function MiniProject({project}) {
         </sub>
       </header>
       <div className={Class.videoContainer}>
-        <iframe width="320" height="200" src={project.videoLink} title="YouTube video player" allowFullScreen></iframe>
+        <iframe src={project.videoLink} title="YouTube video player" allowFullScreen></iframe>
       </div>
       <section className={Class.description}>
         <p>{project.desc}</p>

@@ -10,7 +10,6 @@
   /* background-color: #13484b; */
 }
 .sectionTitle {
-  font-size: 3.5rem;
   width: 80%;
   text-align: left;
   display: flex;
@@ -28,10 +27,36 @@
   background-image: linear-gradient(to left, #00b37d, #2dabb1, #00ffe5d7);
 }
 .miniProjectSection {
-  width: 70%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
-  gap: 1rem;
+  gap: 1em;
   z-index: 2;
+}
+/* Mobile screens */
+@media screen and (min-width: 300px) {
+  .sectionTitle {
+    font-size: 1.5em;
+  }
+  .miniProjectSection {
+    display: flex;
+    overflow-x: scroll;
+    gap: 2em;
+    width: 90%;
+  }
+}
+/* HD PC screens */
+@media screen and (min-width: 1080px) {
+  .sectionTitle {
+    font-size: 3.5em;
+  }
+  .miniProjectSection {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 70%;
+  }
+}
+/* Larger screens (e.g., Full HD) */
+@media screen and (min-width: 2000px) {
+  .sectionTitle {
+    font-size: 3.5em;
+  }
 }
