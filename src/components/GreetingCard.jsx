@@ -1,5 +1,6 @@
 import Class from "./GreetingCard.module.css";
 import SkillIcons from "./SkillIcons";
+import {IoIosArrowDown} from "react-icons/io";
 
 function GreetingCard({projectsRef, aboutRef}) {
   const scrollToProjects = () => {
@@ -45,6 +46,9 @@ function GreetingCard({projectsRef, aboutRef}) {
         </div>
         <SkillIcons bigFont={true} activeSkills={activeSkills} />
       </section>
+      <div className={Class.arrow}>
+        <IoIosArrowDown />
+      </div>
     </div>
   );
 }

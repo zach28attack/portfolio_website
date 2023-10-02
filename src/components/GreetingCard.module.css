@@ -95,3 +95,13 @@
   color: #00ffe5d7;
   text-decoration: underline;
 }
+.arrow {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1rem;
+  font-size: 2rem;
+  color: #00ffe5d7;
+}
