@@ -1,5 +1,5 @@
 import Class from "./BGVideo.module.css";
-import {useRef} from "react";
+import {useRef, useEffect} from "react";
 
 function BGVideo() {
   const videoRef = useRef(null);
@@ -17,7 +17,6 @@ function BGVideo() {
       ref={videoRef}
       className={Class.video}
       loop
-      autoPlay
       controlsList="nodownload"
       preload="auto"
       muted="muted"
