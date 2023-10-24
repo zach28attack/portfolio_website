@@ -6,7 +6,7 @@ function MiniProject({project}) {
     <div className={Class.container}>
       <header className={Class.header}>
         <div className={Class.projectTitle}>
-          {project.name} <a href={`https://github.com/zach28attack/${project.name}`}>{"Source </>"}</a>
+          <span>{project.name}</span> <a href={`https://github.com/zach28attack/${project.name}`}>{"Source </>"}</a>
         </div>
         <sub>
           <SkillIcons bigFont={false} activeSkills={project.activeSkills} />

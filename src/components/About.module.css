@@ -19,6 +19,7 @@
   padding-bottom: 1rem;
   color: #00ccb1;
   line-height: 1.2rem;
+  font-size: 16px;
 }
 .article h3 {
   color: #00ffe5d7;
@@ -50,10 +51,7 @@ a:hover {
     padding: 0 1rem;
   }
   .article {
-    font-size: 0.7em;
-  }
-  .article h3 {
-    font-size: 1em;
+    line-height: 1.6em;
   }
 }
 /* HD PC screens */
@@ -61,15 +59,5 @@ a:hover {
   .card {
     width: 70%;
     padding: 2rem;
-  }
-  .article {
-    font-size: 0.8rem;
-  }
-}
-
-/* Larger screens (e.g., Full HD) */
-@media screen and (min-width: 2000px) {
-  .article {
-    font-size: 1rem;
   }
 }
