@@ -29,6 +29,9 @@ function GreetingCard({projectsRef, aboutRef}) {
     rails: true,
     mongodb: true,
     github: true,
+    docker: true,
+    kubernetes: true,
+    aws: true,
   };
 
   return (

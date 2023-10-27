@@ -16,6 +16,9 @@
 }
 /* Mobile screens */
 @media screen and (min-width: 300px) {
+  .skillIcons {
+    gap: 5px;
+  }
   .bigFont {
     font-size: 1.5em;
   }
@@ -41,6 +44,7 @@
   }
   .descBigFont {
     font-size: 1rem;
+    font-weight: 800;
     transform: translateX(-2em) translateY(2.2em);
   }
   .descSmallFont {

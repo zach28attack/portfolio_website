@@ -3,9 +3,9 @@ import {useState} from "react";
 
 import {AiFillHtml5} from "react-icons/ai";
 import {IoLogoCss3} from "react-icons/io";
-import {SiExpress, SiMongodb, SiGithub} from "react-icons/si";
+import {SiExpress, SiMongodb, SiGithub, SiKubernetes, SiAmazonaws} from "react-icons/si";
 import {BiLogoJavascript, BiLogoReact} from "react-icons/bi";
-import {GrNode} from "react-icons/gr";
+import {GrNode, GrDocker} from "react-icons/gr";
 import {DiRuby, DiRor} from "react-icons/di";
 
 function SkillIcons({bigFont, activeSkills}) {
@@ -19,6 +19,9 @@ function SkillIcons({bigFont, activeSkills}) {
   const [active8, setIsActive8] = useState(false);
   const [active9, setIsActive9] = useState(false);
   const [active10, setIsActive10] = useState(false);
+  const [active11, setIsActive11] = useState(false);
+  const [active12, setIsActive12] = useState(false);
+  const [active13, setIsActive13] = useState(false);
 
   const iconHandler = (e) => {
     if (e.target.id === "span") return;
@@ -34,6 +37,9 @@ function SkillIcons({bigFont, activeSkills}) {
       rails: setIsActive8,
       mongodb: setIsActive9,
       github: setIsActive10,
+      docker: setIsActive11,
+      kubernetes: setIsActive12,
+      aws: setIsActive13,
     };
 
     setIsActive1(false);
@@ -46,6 +52,9 @@ function SkillIcons({bigFont, activeSkills}) {
     setIsActive8(false);
     setIsActive9(false);
     setIsActive10(false);
+    setIsActive11(false);
+    setIsActive12(false);
+    setIsActive13(false);
 
     const clickedIconId = e.target.closest("div").id;
     const setActive = iconMap[clickedIconId];
@@ -65,6 +74,9 @@ function SkillIcons({bigFont, activeSkills}) {
     setIsActive8(false);
     setIsActive9(false);
     setIsActive10(false);
+    setIsActive11(false);
+    setIsActive12(false);
+    setIsActive13(false);
   };
   return (
     <div
@@ -72,16 +84,42 @@ function SkillIcons({bigFont, activeSkills}) {
       id="icon-container"
       onMouseLeave={iconResetHandler}
     >
-      {activeSkills["github"] && (
-        <div onMouseOver={iconHandler} id="github">
-          <SiGithub className={Class.icon} />
+      {activeSkills["aws"] && (
+        <div onMouseOver={iconHandler} id="aws">
+          <SiAmazonaws className={Class.icon} />
           <span
             id="span"
-            className={`${Class.iconDesc} ${active10 ? Class.activeIconDesc : ""} ${
+            className={`${Class.iconDesc} ${active13 ? Class.activeIconDesc : ""} ${
               bigFont ? Class.descBigFont : Class.descSmallFont
             }`}
           >
-            Github
+            Amazon Web Services
+          </span>
+        </div>
+      )}
+      {activeSkills["docker"] && (
+        <div onMouseOver={iconHandler} id="docker">
+          <GrDocker className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active11 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            Docker
+          </span>
+        </div>
+      )}
+      {activeSkills["kubernetes"] && (
+        <div onMouseOver={iconHandler} id="kubernetes">
+          <SiKubernetes className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active12 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            K8s
           </span>
         </div>
       )}
