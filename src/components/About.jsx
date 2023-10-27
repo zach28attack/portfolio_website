@@ -19,9 +19,11 @@ function About() {
           challenge, joining a mechanic shop, where I was offered the opportunity to intern and get sponsored to become
           a certified mechanic. However, I declined the offer because my heart was set on becoming a web developer.
           <h3>Full-Stack Web Development Skills</h3> My technical skill set includes a wide range of technologies such
-          as Ruby, Ruby on Rails, HTML/CSS, React, JavaScript, Node.js, Express.js, MongoDB, and proficiency with
-          GitHub. Although I don't have formal professional experience in web development yet, my self-taught journey
-          has equipped me with the skills and determination needed to tackle real-world challenges.
+          as Ruby, Ruby on Rails, HTML/CSS, React, JavaScript, Node.js, Express.js, MongoDB, Docker, Kubernetes, and
+          Amazon's EC2/EKS. I am presently dedicated to expanding my knowledge in AWS services, as well as mastering
+          React Native and Python. While I may not possess formal professional experience in web development at this
+          time, my self-directed learning journey has equipped me with the skills and resolve necessary to address
+          real-world challenges.
           <h3>Problem Solver and Lifelong Learner</h3> I thrive on solving complex problems and finding innovative
           solutions. Whether it's troubleshooting a malfunctioning engine or crafting a dynamic web application, I
           approach every task with dedication and a hunger for knowledge. I'm committed to continuous learning and
