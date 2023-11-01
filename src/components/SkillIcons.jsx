@@ -1,5 +1,6 @@
 import Class from "./SkillIcons.module.css";
 import {useState} from "react";
+import {motion} from "framer-motion";
 
 import {AiFillHtml5} from "react-icons/ai";
 import {IoLogoCss3} from "react-icons/io";
@@ -78,14 +79,38 @@ function SkillIcons({bigFont, activeSkills}) {
     setIsActive12(false);
     setIsActive13(false);
   };
+  const variantList = {
+    hidden: {
+      transition: {opacity: 0},
+    },
+    visible: {
+      transition: {opacity: 1, duration: 1, delayChildren: 0.3, staggerChildren: 0.05},
+    },
+  };
+  const variantItem = {
+    hidden: {
+      opacity: 0,
+      x: -100,
+    },
+    visible: {
+      opacity: 1,
+      x: 0,
+    },
+  };
+
   return (
-    <div
+    <motion.div
+      // Framer motion animation config
+      initial="hidden"
+      animate="visible"
+      variants={variantList}
+      //--------------------------------
       className={`${Class.skillIcons} ${bigFont ? Class.bigFont : Class.smallFont}`}
       id="icon-container"
       onMouseLeave={iconResetHandler}
     >
       {activeSkills["aws"] && (
-        <div onMouseOver={iconHandler} id="aws">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="aws">
           <SiAmazonaws className={Class.icon} />
           <span
             id="span"
@@ -95,10 +120,10 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             Amazon Web Services
           </span>
-        </div>
+        </motion.div>
       )}
       {activeSkills["docker"] && (
-        <div onMouseOver={iconHandler} id="docker">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="docker">
           <GrDocker className={Class.icon} />
           <span
             id="span"
@@ -108,10 +133,10 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             Docker
           </span>
-        </div>
+        </motion.div>
       )}
       {activeSkills["kubernetes"] && (
-        <div onMouseOver={iconHandler} id="kubernetes">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="kubernetes">
           <SiKubernetes className={Class.icon} />
           <span
             id="span"
@@ -121,10 +146,10 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             K8s
           </span>
-        </div>
+        </motion.div>
       )}
       {activeSkills["html"] && (
-        <div onMouseOver={iconHandler} id="html">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="html">
           <AiFillHtml5 className={Class.icon} />
           <span
             id="span"
@@ -134,10 +159,10 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             HTML5
           </span>
-        </div>
+        </motion.div>
       )}
       {activeSkills["css"] && (
-        <div onMouseOver={iconHandler} id="css">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="css">
           <IoLogoCss3 className={Class.icon} />
           <span
             id="span"
@@ -147,11 +172,11 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             CSS3
           </span>
-        </div>
+        </motion.div>
       )}
 
       {activeSkills["javascript"] && (
-        <div onMouseOver={iconHandler} id="javascript">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="javascript">
           <BiLogoJavascript className={Class.icon} />
           <span
             id="span"
@@ -161,10 +186,10 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             Javascript
           </span>
-        </div>
+        </motion.div>
       )}
       {activeSkills["react"] && (
-        <div onMouseOver={iconHandler} id="react">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="react">
           <BiLogoReact className={Class.icon} />
           <span
             id="span"
@@ -174,10 +199,10 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             React
           </span>
-        </div>
+        </motion.div>
       )}
       {activeSkills["node"] && (
-        <div onMouseOver={iconHandler} id="node">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="node">
           <GrNode className={Class.icon} />
           <span
             id="span"
@@ -187,10 +212,10 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             Node
           </span>
-        </div>
+        </motion.div>
       )}
       {activeSkills["express"] && (
-        <div onMouseOver={iconHandler} id="express">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="express">
           <SiExpress className={Class.icon} />
           <span
             id="span"
@@ -200,11 +225,11 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             Express
           </span>
-        </div>
+        </motion.div>
       )}
 
       {activeSkills["mongodb"] && (
-        <div onMouseOver={iconHandler} id="mongodb">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="mongodb">
           <SiMongodb className={Class.icon} />
           <span
             id="span"
@@ -214,10 +239,10 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             MongoDB
           </span>
-        </div>
+        </motion.div>
       )}
       {activeSkills["rails"] && (
-        <div onMouseOver={iconHandler} id="rails">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="rails">
           <DiRor className={Class.icon} />
           <span
             id="span"
@@ -227,10 +252,10 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             Rails
           </span>
-        </div>
+        </motion.div>
       )}
       {activeSkills["ruby"] && (
-        <div onMouseOver={iconHandler} id="ruby">
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="ruby">
           <DiRuby className={Class.icon} />
           <span
             id="span"
@@ -240,9 +265,9 @@ function SkillIcons({bigFont, activeSkills}) {
           >
             Ruby
           </span>
-        </div>
+        </motion.div>
       )}
-    </div>
+    </motion.div>
   );
 }
 
