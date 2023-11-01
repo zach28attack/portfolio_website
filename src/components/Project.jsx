@@ -5,9 +5,9 @@ import {motion} from "framer-motion";
 function Project({project}) {
   return (
     <motion.div
-      initial={{opacity: 0, x: 100}}
-      whileInView={{opacity: 1, x: 0}}
-      transition={{duration: 0.5, x: 0}}
+      initial={{opacity: 0, y: 100}}
+      whileInView={{opacity: 1, y: 0}}
+      transition={{duration: 0.5}}
       className={Class.container}
     >
       <div className={Class.header}>
