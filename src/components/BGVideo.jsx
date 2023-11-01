@@ -1,10 +1,11 @@
 import Class from "./BGVideo.module.css";
 import {useRef, useEffect} from "react";
 
-function BGVideo() {
+function BGVideo({setIsVideoLoaded}) {
   const videoRef = useRef(null);
 
   useEffect(() => {
+    // setIsVideoLoaded(true);
     const video = videoRef.current;
     video.play().catch((error) => {
       // Handle any errors that might occur when attempting to autoplay
