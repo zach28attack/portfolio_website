@@ -241,16 +241,16 @@ function SkillIcons({bigFont, activeSkills}) {
           </span>
         </motion.div>
       )}
-      {activeSkills["rails"] && (
-        <motion.div variants={variantItem} onMouseOver={iconHandler} id="rails">
-          <DiRor className={Class.icon} />
+      {activeSkills["python"] && (
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="python">
+          <SiPython className={Class.icon} />
           <span
             id="span"
-            className={`${Class.iconDesc} ${active8 ? Class.activeIconDesc : ""} ${
+            className={`${Class.iconDesc} ${active10 ? Class.activeIconDesc : ""} ${
               bigFont ? Class.descBigFont : Class.descSmallFont
             }`}
           >
-            Rails
+            Python
           </span>
         </motion.div>
       )}
@@ -267,16 +267,16 @@ function SkillIcons({bigFont, activeSkills}) {
           </span>
         </motion.div>
       )}
-      {activeSkills["python"] && (
-        <motion.div variants={variantItem} onMouseOver={iconHandler} id="python">
-          <SiPython className={Class.icon} />
+      {activeSkills["rails"] && (
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="rails">
+          <DiRor className={Class.icon} />
           <span
             id="span"
-            className={`${Class.iconDesc} ${active10 ? Class.activeIconDesc : ""} ${
+            className={`${Class.iconDesc} ${active8 ? Class.activeIconDesc : ""} ${
               bigFont ? Class.descBigFont : Class.descSmallFont
             }`}
           >
-            Python
+            Rails
           </span>
         </motion.div>
       )}
