@@ -8,10 +8,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  top: 0;
+  left: 0;
 }
 .message {
-  width: 30%;
+  display: flex;
 }
 .bug {
   animation: rotate 2s linear infinite;
@@ -23,5 +24,23 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+/* Mobile screens */
+@media screen and (min-width: 300px) {
+  .container {
+    font-size: 2em;
+  }
+}
+/* HD PC screens */
+@media screen and (min-width: 1080px) {
+  .container {
+    font-size: 4em;
+  }
+}
+/* Larger screens (e.g., Full HD) */
+@media screen and (min-width: 2000px) {
+  .container {
+    font-size: 4em;
   }
 }
