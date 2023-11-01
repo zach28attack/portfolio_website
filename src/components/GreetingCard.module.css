@@ -13,7 +13,7 @@
   flex-direction: column;
   background-clip: text; /* This is the key property for applying gradient to text */
   color: transparent;
-  background-image: linear-gradient(to left, #00b37d, #00b395, #00a18c, #00ffe5d7);
+  background-image: linear-gradient(to left, #00b395, #00a18c, #00efcf);
   -webkit-background-clip: text; /* For Chrome */
 }
 .name {

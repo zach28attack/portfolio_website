@@ -4,7 +4,7 @@ import {motion} from "framer-motion";
 
 import {AiFillHtml5} from "react-icons/ai";
 import {IoLogoCss3} from "react-icons/io";
-import {SiExpress, SiMongodb, SiGithub, SiKubernetes, SiAmazonaws} from "react-icons/si";
+import {SiExpress, SiMongodb, SiPython, SiKubernetes, SiAmazonaws} from "react-icons/si";
 import {BiLogoJavascript, BiLogoReact} from "react-icons/bi";
 import {GrNode, GrDocker} from "react-icons/gr";
 import {DiRuby, DiRor} from "react-icons/di";
@@ -37,7 +37,7 @@ function SkillIcons({bigFont, activeSkills}) {
       ruby: setIsActive7,
       rails: setIsActive8,
       mongodb: setIsActive9,
-      github: setIsActive10,
+      python: setIsActive10,
       docker: setIsActive11,
       kubernetes: setIsActive12,
       aws: setIsActive13,
@@ -264,6 +264,19 @@ function SkillIcons({bigFont, activeSkills}) {
             }`}
           >
             Ruby
+          </span>
+        </motion.div>
+      )}
+      {activeSkills["python"] && (
+        <motion.div variants={variantItem} onMouseOver={iconHandler} id="python">
+          <SiPython className={Class.icon} />
+          <span
+            id="span"
+            className={`${Class.iconDesc} ${active10 ? Class.activeIconDesc : ""} ${
+              bigFont ? Class.descBigFont : Class.descSmallFont
+            }`}
+          >
+            Python
           </span>
         </motion.div>
       )}
