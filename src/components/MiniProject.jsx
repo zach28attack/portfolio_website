@@ -1,9 +1,15 @@
 import Class from "./MiniProject.module.css";
 import SkillIcons from "./SkillIcons";
-
+import {motion} from "framer-motion";
 function MiniProject({project}) {
   return (
-    <div className={Class.container}>
+    <motion.div
+      initial={{opacity: 0, x: 100}}
+      whileInView={{opacity: 1, x: 0}}
+      viewport={{once: true}}
+      transition={{duration: 0.5, x: 0}}
+      className={Class.container}
+    >
       <header className={Class.header}>
         <div className={Class.projectTitle}>
           <span>{project.name}</span> <a href={`https://github.com/zach28attack/${project.name}`}>{"Source </>"}</a>
@@ -18,7 +24,7 @@ function MiniProject({project}) {
       <section className={Class.description}>
         <p>{project.desc}</p>
       </section>
-    </div>
+    </motion.div>
   );
 }
 

@@ -19,7 +19,6 @@ function Projects() {
       ruby: false,
       rails: false,
       mongodb: true,
-      github: false,
     },
   };
   const GrapeVine = {
@@ -37,7 +36,6 @@ function Projects() {
       ruby: true,
       rails: true,
       mongodb: false,
-      github: false,
     },
   };
   const TwitterClone = {
@@ -54,7 +52,6 @@ function Projects() {
       ruby: true,
       rails: true,
       mongodb: false,
-      github: false,
     },
   };
   const TodoList = {
@@ -71,7 +68,6 @@ function Projects() {
       ruby: false,
       rails: false,
       mongodb: true,
-      github: false,
     },
   };
   const AlphaBlog = {
@@ -88,7 +84,6 @@ function Projects() {
       ruby: true,
       rails: true,
       mongodb: false,
-      github: false,
     },
   };
   const FriendsBook = {
@@ -105,7 +100,6 @@ function Projects() {
       ruby: true,
       rails: true,
       mongodb: false,
-      github: false,
     },
   };
   const SekaiNoKo = {
@@ -122,7 +116,6 @@ function Projects() {
       ruby: false,
       rails: false,
       mongodb: false,
-      github: false,
     },
   };
 
