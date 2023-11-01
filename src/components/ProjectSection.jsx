@@ -1,7 +1,7 @@
 import MiniProject from "./MiniProject";
 import Project from "./Project";
 import Class from "./ProjectSection.module.css";
-
+import {motion} from "framer-motion";
 function Projects() {
   const NutriTone = {
     videoLink: "https://www.youtube.com/embed/UtvKs4uj_tY?si=X5vl4pvAvpz0rM6S",
@@ -118,6 +118,20 @@ function Projects() {
       mongodb: false,
     },
   };
+  const sectionVariants = {
+    hidden: {transition: {opacity: 0, x: 100}},
+    visible: {
+      transition: {x: 0, opacity: 1, duration: 2, delayChildren: 0.3, staggerChildren: 0.5},
+    },
+  };
+  const miniProjVariants = {
+    hidden: {opacity: 0, x: 100},
+    visible: {
+      duration: 0.5,
+      x: 0,
+      opacity: 1,
+    },
+  };
 
   return (
     <div className={Class.container}>
@@ -128,12 +142,26 @@ function Projects() {
       <Project project={NutriTone} />
       <Project project={SekaiNoKo} />
       <Project project={GrapeVine} />
-      <div className={Class.miniProjectSection}>
-        <MiniProject project={TodoList} />
-        <MiniProject project={TwitterClone} />
-        <MiniProject project={FriendsBook} />
-        <MiniProject project={AlphaBlog} />
-      </div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        // viewport={{once: true}}
+        variants={sectionVariants}
+        className={Class.miniProjectSection}
+      >
+        <motion.div variants={miniProjVariants}>
+          <MiniProject project={TodoList} />
+        </motion.div>
+        <motion.div variants={miniProjVariants}>
+          <MiniProject project={TwitterClone} />
+        </motion.div>
+        <motion.div variants={miniProjVariants}>
+          <MiniProject project={FriendsBook} />
+        </motion.div>
+        <motion.div variants={miniProjVariants}>
+          <MiniProject project={AlphaBlog} />
+        </motion.div>
+      </motion.div>
     </div>
   );
 }
