@@ -102,7 +102,7 @@ function SkillIcons({bigFont, activeSkills}) {
     <motion.div
       // Framer motion animation config
       initial="hidden"
-      animate="visible"
+      whileInView="visible"
       variants={variantList}
       //--------------------------------
       className={`${Class.skillIcons} ${bigFont ? Class.bigFont : Class.smallFont}`}
