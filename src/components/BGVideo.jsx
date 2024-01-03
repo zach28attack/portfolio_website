@@ -9,7 +9,14 @@ function BGVideo({setIsVideoLoaded}) {
   }, []);
 
   return (
-    <video ref={videoRef} className={Class.video} controlsList="nodownload" muted="muted" poster="/Untitled.mp4">
+    <video
+      ref={videoRef}
+      className={Class.video}
+      controlsList="nodownload"
+      muted="muted"
+      poster="/Untitled.mp4"
+      autoPlay="true"
+    >
       <source src="/Untitled.mp4" type="video/mp4" />
     </video>
   );
