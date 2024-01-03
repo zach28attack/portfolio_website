@@ -16,6 +16,7 @@ function BGVideo({setIsVideoLoaded}) {
       muted="muted"
       poster="/Untitled.mp4"
       autoPlay="true"
+      loop="true"
     >
       <source src="/Untitled.mp4" type="video/mp4" />
     </video>
